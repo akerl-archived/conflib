@@ -11,16 +11,16 @@ How to use
 
     import conflib
     
-    defaults = {'hello': 'world', 'alpha': 5}
-    globals = {'wat': 'wut', 'fancy': (20, 'fish')}
-    locals = {'hello': 'everybody', 'beta': 'qwerty'}
+    Default = {'hello': 'world', 'alpha': 5}
+    Global = {'wat': 'wut', 'fancy': (20, 'fish')}
+    Local = {'hello': 'everybody', 'beta': 'qwerty'}
     
-    validator = {
+    Validator = {
         'alpha': lambda x: x < 10,
         'fancy': tuple,
-        'beta': [{'asdf', 'qwerty'}, {'fizz','buzz'}]
+        'beta': [('asdf', 'qwerty'), ('fizz','buzz')]
     }
     
-    my_config = conflib.Config(defaults, globals, locals)
+    my_config = conflib.Config(Default, Global, Local, validation_dict=Validator)
     print(my_config.options)
 

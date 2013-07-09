@@ -1,7 +1,7 @@
 conflib
 =========
 
-Simplifies configuration stacking. Primarily, this was written to allow stacking of default, global, and local settings for akerl/subpub. It allows for validation so that you can enforce contraints on supplied options.
+Simplifies configuration stacking. Primarily, this was written to allow stacking of default, global, and local settings for subpub. It allows for validation so that you can enforce contraints on supplied options.
 
 ## Usage
 

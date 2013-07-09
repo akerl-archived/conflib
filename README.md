@@ -26,6 +26,5 @@ Simplifies configuration stacking. Primarily, this was written to allow stacking
 
 ## License
 
-conflib is released under the MIT License. See the bundled LICENSE file for
-details.
+conflib is released under the MIT License. See the bundled LICENSE file for details.
 

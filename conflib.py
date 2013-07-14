@@ -23,11 +23,13 @@ class Config(object):
             elif type(config) == type(self):
                 self.stack(config.options)
         self.validate(validation_dict)
+
     ''' new_dict is stacked onto the current options
             in a key conflict, new_dict's value takes precedence
     '''
     def stack(self, new_dict):
         self.options.update(new_dict)
+
     ''' validation_dict is a dict of key / validation pairs
             validation interpretation is handled in self._do_validation()
     '''
@@ -38,8 +40,11 @@ class Config(object):
                     self.options[option] = self._do_validation(
                         option, validation, self.options[option])
                 except ValueError:
-                    print('Validation failed for {0}: {1}'.format(option, self.options[option]))
+                    print('Validation failed for {0}: {1}'.format(
+                        option, self.options[option])
+                    )
                     raise
+
     ''' argument is the key for the option we're dealing with
             (currently not used in the function itself)
         validation is the operator used to determine correctness

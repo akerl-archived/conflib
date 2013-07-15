@@ -14,8 +14,7 @@ class Config(object):
     '''
     def __init__(self,
                  *configs,
-                 validation_dict={},
-                 mismatch_is_fatal=True):
+                 validation_dict={}):
         self.options = {}
         for config in configs:
             if type(config) is dict:

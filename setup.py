@@ -9,5 +9,5 @@ setup(
     author='Les Aker',
     author_email='me@lesaker.org',
     url='https://github.com/akerl/conflib',
-    py_modules=['conflib'],
+    packages=['conflib'],
 )

@@ -5,7 +5,7 @@ python:
 - 3.3
 script:
 - pep8 .
-- nosetests --with-coverage --cover-package=conflib
+- nosetests --with-coverage --cover-package=conflib.conflib
 after_success:
 - coveralls
 notifications:

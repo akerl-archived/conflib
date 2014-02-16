@@ -1,1 +1,1 @@
-from conflib import *
+from conflib.conflib import *

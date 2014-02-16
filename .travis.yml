@@ -1,0 +1,18 @@
+language: python
+python:
+- 2.7
+- 3.2
+- 3.3
+script:
+- pep8 .
+- nosetests --with-coverage --cover-package=conflib
+after_success:
+- coveralls
+notifications:
+  email: false
+  irc:
+    channels:
+      - ircs://irc.oftc.net:6697#akerl
+    channel_key: sekrit
+    template:
+      - '%{repository}/%{branch}/%{build_number}: %{message} -- %{build_url}'

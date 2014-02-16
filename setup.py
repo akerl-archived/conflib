@@ -11,4 +11,3 @@ setup(
     url='https://github.com/akerl/conflib',
     py_modules=['conflib'],
 )
-

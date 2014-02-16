@@ -91,4 +91,3 @@ class Config(object):
                 raise ValueError
         else:
             raise ValueError
-

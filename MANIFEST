@@ -1,4 +1,5 @@
 README.md
 LICENSE
 setup.py
-conflib.py
+conflib/__init__.py
+conflib/conflib.py

@@ -17,17 +17,16 @@ class Config(object):
                  validation_dict={}):
         self.options = {}
         for config in configs:
-            if type(config) is dict:
-                self.stack(config)
-            elif type(config) == type(self):
-                self.stack(config.options)
+            self.stack(config)
         self.validate(validation_dict)
 
     ''' new_dict is stacked onto the current options
             in a key conflict, new_dict's value takes precedence
     '''
-    def stack(self, new_dict):
-        self.options.update(new_dict)
+    def stack(self, new_config):
+        if type(new_config) is type(self):
+            new_config = new_config.options
+        self.options.update(new_config)
 
     ''' validation_dict is a dict of key / validation pairs
             validation interpretation is handled in self._do_validation()

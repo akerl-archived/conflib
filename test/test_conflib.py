@@ -139,6 +139,16 @@ class TestConflib:
         }
         conflib.Config(values, validation_dict=validation)
 
+    @nose.tools.raises(ValueError)
+    def test_validation_tuple_fail(self):
+        values = {
+            'a': 'bar',
+        }
+        validation = {
+            'a': [('foo', 'buzz'), (3, 4)],
+        }
+        conflib.Config(values, validation_dict=validation)
+
     def test_validation_types(self):
         config = conflib.Config()
         values = {
@@ -183,7 +193,7 @@ class TestConflib:
     def test_validation_callable_fail(self):
         def raise_it(x):
             if x != 5:
-                raise ValueError
+                raise TypeError
         values = {
             'a': 10,
         }

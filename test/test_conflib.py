@@ -138,7 +138,7 @@ class TestConflib:
             'a': ['what', 'wut', 'wat'],
         }
         conflib.Config(values, validation_dict=validation)
- 
+
     def test_validation_types(self):
         config = conflib.Config()
         values = {
@@ -165,7 +165,7 @@ class TestConflib:
             'a': float,
         }
         conflib.Config(values, validation_dict=validation)
-        
+
     def test_validation_callable(self):
         values = {
             'a': 10,

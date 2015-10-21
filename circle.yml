@@ -1,0 +1,9 @@
+dependencies:
+  pre:
+    - pyenv local 3.4.3 3.3.3
+test:
+  override:
+    - tox -v
+test:
+  post:
+    - codecov

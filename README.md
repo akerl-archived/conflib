@@ -2,8 +2,9 @@ conflib
 =========
 
 [![Latest Version](https://img.shields.io/pypi/v/conflib.svg)](https://pypi.python.org/pypi/conflib/)
-[![Coverage Status](https://img.shields.io/coveralls/akerl/conflib.svg)](https://coveralls.io/r/akerl/conflib)
-[![Build Status](https://img.shields.io/travis/akerl/conflib.svg)](https://travis-ci.org/akerl/conflib)
+[![Build Status](https://img.shields.io/circleci/project/akerl/conflib.svg)](https://circleci.com/gh/akerl/conflib)
+[![Coverage Status](https://img.shields.io/codecov/c/github/akerl/conflib.svg)](https://codecov.io/github/akerl/conflib)
+[![Code Quality](https://img.shields.io/codacy/ecff585dcc1147f0817d710f54241040.svg)](https://www.codacy.com/app/akerl/conflib)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 Simplifies configuration stacking. Primarily, this was written to allow stacking of default, global, and local settings. It allows for validation so that you can enforce contraints on supplied options.

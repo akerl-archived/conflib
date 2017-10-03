@@ -1,6 +1,6 @@
 machine:
   environment:
-    PYENV_VERSION: 3.6.2
+    PYENV_VERSION: 3.6.3
     TOXENV: py36
   post:
     - cd /opt/circleci/.pyenv && git pull

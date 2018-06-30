@@ -3,8 +3,8 @@ machine:
     - rm -rf /home/ubuntu/virtualenvs/venv-system
     - mkdir -p /home/ubuntu/virtualenvs/venv-system
   environment:
-    PYENV_VERSION: 3.6.5
-    TOXENV: py36
+    PYENV_VERSION: 3.7.0
+    TOXENV: py37
 dependencies:
   override:
     - 'cd /opt/circleci/.pyenv && git pull'

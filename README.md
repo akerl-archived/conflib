@@ -2,7 +2,7 @@ conflib
 =========
 
 [![Latest Version](https://img.shields.io/pypi/v/conflib.svg)](https://pypi.python.org/pypi/conflib/)
-[![Build Status](https://img.shields.io/circleci/project/akerl/conflib/master.svg)](https://circleci.com/gh/akerl/conflib)
+[![Build Status](https://img.shields.io/travis/com/akerl/conflib.svg)](https://travis-ci.com/akerl/conflib)
 [![Coverage Status](https://img.shields.io/codecov/c/github/akerl/conflib.svg)](https://codecov.io/github/akerl/conflib)
 [![Code Quality](https://img.shields.io/codacy/ecff585dcc1147f0817d710f54241040.svg)](https://www.codacy.com/app/akerl/conflib)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)

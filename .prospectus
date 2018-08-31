@@ -26,7 +26,7 @@ item do
 
       actual do
         static
-        set File.readlines('circle.yml').grep(/PYENV_VER/).first.split.last.gsub(':',' ')
+        set File.readlines('.travis.yml').grep(/PYENV_VER/).first.split('=').last.strip
       end
     end
   end
